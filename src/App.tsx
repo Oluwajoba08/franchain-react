@@ -1,4 +1,3 @@
-import React from "react"
 import Logo from "./components/svg/Logo"
 import RightArrow from "./components/svg/RightArrow"
 import SignUpScreen from "./components/svg/SignUpScreen"
