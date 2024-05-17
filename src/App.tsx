@@ -1,5 +1,4 @@
-import Logo from "./components/svg/Logo"
-import RightArrow from "./components/svg/RightArrow"
+import Navbar from "./components/Navbar"
 import SignUpScreen from "./components/svg/SignUpScreen"
 
 function App() {
@@ -7,18 +6,12 @@ function App() {
   return (
     <main className="w-full h-full min-h-screen">
       <div className="w-full max-w-[1300px] mx-auto">
-        <div className="flex justify-between items-center max-lg:px-5 px-10 py-5">
-          <Logo />
-          <div className="flex gap-5 items-center">
-            <p className="leading-[20.83px]">Log in</p>
-            <RightArrow />
-          </div>
-        </div>
+        <Navbar title="Log in" link="/login" />
         <div className="flex justify-between gap-4">
-          <div className="flex flex-col px-5 w-1/2 max-[1024px]:hidden items-center justify-center">
+          <div className="flex flex-col px-5 xl:px-[45px] w-1/2 max-[1024px]:hidden items-center justify-center">
             <SignUpScreen marginTop="-1rem" width="500px" maxHeight="500px" overflow="hidden" />
-            <h3 className="text-[40px] leading-[52.08px] font-medium text-center">Royalty collections, simplified. It's next level!</h3>
-            <p className="text-[22px] leading-[28.64px] text-center">Revenue based invoice collection to make royalty collection as easy as...</p>
+            <h3 className="text-[40px] leading-[52.08px] font-medium text-center">Royalty collections, <br/> simplified. It's next level!</h3>
+            <p className="text-[22px] leading-[28.64px] text-center">Revenue based invoice collection <br/>to make royalty collection as easy as...</p>
           </div>
           <div className="px-8 max-lg:px-5 w-1/2 max-lg:w-full min-[644px]:max-w-[624px] mx-auto pt-[15px] md:pb-[200px] max-lg:pb-8 pb-[96px]">
             <p className="text-[35px] font-medium leading-[45.57px]">Get started with Franchain</p>
