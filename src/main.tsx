@@ -7,6 +7,7 @@ import Login from './components/Login.tsx'
 import ResetPassword from './components/ResetPassword.tsx'
 import ConfirmEmail from './components/ConfirmEmail.tsx'
 import CheckEmail from './components/CheckEmail.tsx'
+import Onboarding from './components/Onboarding.tsx'
 
 const router = createBrowserRouter([
   {
@@ -28,6 +29,10 @@ const router = createBrowserRouter([
   {
     path: "/check-email",
     element: <CheckEmail />
+  },
+  {
+    path: "/onboarding",
+    element: <Onboarding />
   }
 ])
 

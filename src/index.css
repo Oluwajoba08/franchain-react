@@ -9,6 +9,7 @@
     --app-colors-red: #ff4e4e;
     --text-main: #282828;
     --off-white: #fdfdff;
+    --btn-primary: #7D97FF;
     --btn-primary-disabled: #ced6f7;
     font-family: "DM Sans", Helvetica, "Open Sans", "Helvetica Neue", system-ui, sans-serif;
     color: var(--text-main);
@@ -18,7 +19,7 @@
     position: relative;
     z-index: 0;
   }
-  main::before {
+  main:not(.fullscreen)::before {
     content: "";
     display: block;
     position: absolute;
@@ -29,6 +30,9 @@
     z-index: -1;
     background: linear-gradient(146.36deg, #dfeaf0 8.13%, #d5e4ea 58.07%, #f4e7f4 99.76%);
   }
+  button {
+    background-color: var(--btn-primary);
+  }
   button:disabled {
     background-color: var(--btn-primary-disabled);
   }
@@ -37,10 +41,14 @@
       display: none;
     }
   }
-  input {
+  input:not([type="checkbox"]) {
     background-color: var(--off-white);
     border: 1px solid #b1b7d6;
     border-radius: 10px;
+  }
+  input[type="checkbox"] {
+    background-color: #D9D9D90F;
+    border: 0.82px solid #969696;
   }
   p a{
     text-decoration: underline;
